@@ -199,7 +199,7 @@ KB_TYPE_MODEL = kb.TYPE_MODEL;
 
 KB_TYPE_COLLECTION = kb.TYPE_COLLECTION;
 
-kb.ko = ko = this.ko || require('knockout');
+kb.ko = ko = this.ko || require('matchdav-knockout');
 
 if (this.Parse) {
   _ = this.Parse._;
@@ -227,7 +227,7 @@ if (this.Parse) {
   kb.Model = this.Parse.Object;
   kb.Events = this.Parse.Events;
 } else {
-  kb.Backbone = this.Backbone || require('backbone');
+  kb.Backbone = this.Backbone || require('jashkenas-backbone');
   kb.Collection = kb.Backbone.Collection;
   kb.Model = kb.Backbone.Model;
   kb.Events = kb.Backbone.Events;
